@@ -8,8 +8,15 @@ def minOperations(n):
     if n <= 1:
         return 0
     operations = 0
-    for i in range(2, n+1):
-        while n % i == 0:
-            operations += i
-            n = n // i
+    A = 1
+    copyall = 0
+    paste = 0
+    A_copied = 0
+    while A < n:
+        if n % A == 0:
+            copyall += 1
+            A_copied = A
+        paste += 1
+        operations = copyall + paste
+        A += A_copied
     return operations
