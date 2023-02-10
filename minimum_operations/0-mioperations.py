@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-    method that calculates the fewest no of opperations to get the result in exactly n H chara in a file
- """
+method that calculates the fewest no of opperations to get the result in exactly n H chara in a file
+"""
 def minOperations(n):
     """ min operations method"""
     
