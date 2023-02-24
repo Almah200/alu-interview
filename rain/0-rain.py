@@ -9,7 +9,7 @@ calculate how many square units of water will be retained after it rains.
 def rain(walls):
     """Calculating the square units of retained water"""
     if not walls:
-             return 0
+        return 0
 
     a = len(walls)
     left = [0] * a
@@ -21,7 +21,7 @@ def rain(walls):
 
     right[a - 1] = walls[a - 1]
     for i in range(a - 2, -1, -1):
-            right[i] = max(right[i + 1], walls[i])
+        right[i] = max(right[i + 1], walls[i])
 
     water = 0
     for i in range(a):
