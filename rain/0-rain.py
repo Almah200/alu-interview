@@ -25,6 +25,6 @@ def rain(walls):
 
     water = 0
     for i in range(a):
-        water += min(left[i], right[i]) - walls[i] 
+        water += min(left[i], right[i]) - walls[i]
 
     return water
