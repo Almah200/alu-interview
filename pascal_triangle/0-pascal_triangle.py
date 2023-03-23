@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ pascal triangle"""
+
+
 def pascal_triangle(n):
     """ a list of integers repre pascal tri"""
     if n <= 0:
